@@ -20,7 +20,7 @@ The virtual machine forwards ports to that you can:
 
 ```bash
 # From the host machine
-echo "test.mycounter 100 `date +%s`" | nc localhost 22003"
+echo "test.mycounter 100 `date +%s`" | nc localhost 22003
 ```
 
 The counter data should show up in the webapp : http://localhost:8081
@@ -43,7 +43,7 @@ If the recording interval is 60 seconds, and you send the following data during 
 
 ```
 # From the host machine
-$ echo "test.mycounter 100 `date +%s`" | nc localhost 22023"
+echo "test.mycounter 100 `date +%s`" | nc localhost 22023
 ```
 
 `carbon-aggregator` buffers incoming counter data, and runs aggregate operations
